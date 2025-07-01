@@ -1,0 +1,74 @@
+1. git init
+Initializes a new Git repository in your project folder.
+
+git init
+Creates a .git folder and starts version control in the current directory.
+
+2. git config
+Sets Git configuration options like user name and email.
+
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Use --global to apply the setting for all repositories; omit it to apply to the current repo only.
+
+3. git clone
+Clones a remote repository to your local machine.
+
+git clone https://github.com/user/repo.git
+This creates a local copy of the remote repo including its history.
+
+4. git push
+Uploads your commits to the remote repository.
+
+git push origin main
+origin is the default remote name; main is the branch name. Replace as needed.
+
+5. git pull
+Fetches and merges changes from the remote repo to your current branch.
+
+git pull origin main
+Combines git fetch and git merge in one step.
+
+6. git merge
+Merges changes from one branch into another (typically used after checkout).
+
+git checkout main
+git merge feature-branch
+Merges feature-branch into main.
+
+7. git fetch
+Downloads changes from the remote repository but does not merge them.
+
+git fetch origin
+
+git merge origin/main
+
+
+
+1. git branch
+Lists all local branches or creates a new branch.
+
+List branches:
+
+git branch
+Create a new branch:
+git branch feature-branch
+
+2. git checkout <branch>
+Switches to the specified branch.
+git checkout feature-branch
+
+If the branch doesn't exist, you can create and switch in one step:
+
+git checkout -b new-branch
+
+3. Add a Remote Repository
+
+To add a remote named origin:
+
+git remote add origin https://github.com/user/repo.git
+You can verify the remote:
+git remote -v
+
+If you want to change the remote URL later:
+git remote set-url origin https://new-url.com/user/repo.git
